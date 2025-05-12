@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ageism Awareness in Kazakhstan</title>
+<link rel="stylesheet" href="enhanced_makeup.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.carousel-slide {
+    display: none;
+    text-align: center;
+}
+.carousel-slide.active {
+    display: block;
+}
+.carousel blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+}
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #35424a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+.video-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+.video-gallery iframe {
+    min-width: 300px;
+    height: 200px;
+    border: none;
+    flex: 0 0 auto;
+    border-radius: 5px;
+}
+</style></head>
+<body>
+    <div class="accessibility-tools">
+    <button id="textSizeToggle"><i class="fas fa-text-height"></i> Larger Text</button>
+    <button id="contrastToggle"><i class="fas fa-adjust"></i> High Contrast</button>
+</div>
+<header>
+<h1>End Ageism: Empower Older Job Seekers</h1>
+<nav>
+<ul>
+ <li><a href="final_site.html#about">About</a></li>
+    <li><a href="final_site.html#research">Research</a></li>
+    <li><a href="blog.html">Success Stories</a></li> <!-- Changed name from "Real Stories" -->
+    <li><a href="submit.html">Submit Opportunity</a></li>
+    <li><a href="final_site.html#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main class="container">
+<section id="about">
+<h2>About Ageism</h2>
+<p>Ageism is a form of discrimination that negatively impacts older individuals, especially in the job market. This site aims to raise awareness and provide support for job seekers aged 50 and above in Kazakhstan.</p>
+</section>
+<section id="research">
+<section id="real-stories">
+<h2><a href="blog.html">Real Stories</a></h2>
+<div class="carousel">
+<div class="carousel-slide active">
+<blockquote>"Of course they choose young people... my age was always a disadvantage."</blockquote>
+<p>— 56-year-old former bank director</p>
+</div>
+<div class="carousel-slide">
+<blockquote>"I have a family to feed... so I kept looking, even if it was hard."</blockquote>
+<p>— 52-year-old former railway cashier</p>
+</div>
+<div class="carousel-slide">
+<blockquote>"I’m ready to study and learn new programs. I just need the opportunity."</blockquote>
+<p>— Interview participant</p>
+</div>
+<button class="prev">❮</button>
+<button class="next">❯</button>
+</div>
+</section>
+</section>
+<br/><br/>
+<div class="community-widget">
+  <h3><i class="fas fa-users"></i> Join Our Community</h3>
+  <p>Connect with others facing similar challenges</p>
+  <a href="forum.html" class="forum-button">
+    <i class="fas fa-comments"></i> Enter Forum
+  </a>
+  <div class="forum-preview">
+    <div class="forum-post">
+      <strong>Nurbol:</strong> "Found work at 58! Here's how..."
+    </div>
+    <div class="forum-post">
+      <strong>Aigul:</strong> "Need help with online applications"
+    </div>
+  </div>
+</div>
+<br/><br/>
+<!-- <section id="solutions">
+<h2>Free Job-Seeking Resources</h2>
+<ul>
+<li><a href="https://enbek.kz/kk">Search Jobs on Enbek.kz</a></li>
+<li><a download="" href="https://ageing-better.org.uk/sites/default/files/2023-09/grow-a-toolkit-for-employers.pdf">Download PDF Toolkit for Older Workers</a></li>
+<li><a href="https://hh.kz/?utm_source=yandex&utm_medium=cpc&utm_campaign=yandex_all_aldev_kr_hh_brand_new_kz_search&utm_content=ch_yandex_direct|gid_4459125280|ctr_10802181573|ph_26441494920|pst_premium|ps_1|srct_search|src_none|devt_desktop|ret_26441494920|cid_59173548|dop_&utm_term=%D1%85%D0%B5%D0%B4%20%D1%85%D0%B0%D0%BD%D1%82%D0%B5%D1%80&yclid=13321048016321249279">Visit hh.kz for job postings</a></li>
+</ul> -->
+<h2>Digital Skills Quick Check</h2>
+<form id="skillsForm">
+    <label><input type="checkbox" name="skill" value="email"> <i class="fas fa-envelope"></i> I can send an email with an attachment</label><br/>
+    <label><input type="checkbox" name="skill" value="apply"> <i class="fas fa-briefcase"></i> I know how to apply for a job online</label><br/>
+    <label><input type="checkbox" name="skill" value="zoom"> <i class="fas fa-video"></i> I can use Zoom or video calls</label><br/>
+    <button type="button" id="checkSkills">Check My Skills</button>
+    <div id="skillsResult" style="display:none; margin-top:15px; padding:10px; background:#f0f8ff; border-radius:5px;"></div>
+</form>
+<br/>
+<h2>Video Tutorials</h2>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://yandex.kz/video/preview/302983418291073709?from=tabbar&reqid=1747062023088386-9495538234031644032-balancer-term-kz-yp-vla-3-BAL&suggest_reqid=704176692162524906320225390936108&text=basic+computer+skills+for+seniors" title="Basic Computer Skills for Seniors" width="100%"></iframe>
+<br/><br/>
+<div class="video-gallery">
+<iframe allowfullscreen="" src="https://yandex.kz/video/preview/12438828454862771537?from=tabbar&parent-reqid=1747061793304585-7628718905583356539-balancer-term-kz-yp-vla-3-BAL&text=how+to+apply+to+a+job+for+elders+tutorial" title="How to apply to a job"></iframe>
+<iframe allowfullscreen="" src="https://yandex.kz/video/preview/13212447534530840268?from=tabbar&reqid=1747062109978848-2067913791076735976-balancer-term-kz-yp-vla-4-BAL&suggest_reqid=704176692162524906321096780757908&text=email+basics" title="Email Basics"></iframe>
+<iframe allowfullscreen="" src="https://yandex.kz/video/preview/2819435216333892159?from=tabbar&reqid=1747062170723535-10450987444310975664-balancer-term-kz-yp-vla-2-BAL&suggest_reqid=704176692162524906321703867945954&text=zoom+tutorial" title="Zoom Tutorial"></iframe>
+</div>
+<br/><br/>
+<a href="submit.html">Submit a Job Offer or Testimonial →</a>
+<br/><br/>
+<h2>Proposed Solutions</h2>
+<p>We propose the following solutions to aid older job seekers:</p>
+<ol>
+<li>Online job portals tailored for older workers.</li>
+<li>Workshops on digital skills to enhance employability.</li>
+<li>Networking events to connect older job seekers with potential employers.</li>
+</ol>
+</section>
+<section id="mental-health">
+<h2>Mental Health Support</h2>
+<p>Unemployment can affect mental well-being. If you are feeling overwhelmed, you are not alone.</p>
+<ul>
+<li><a href="https://mentalhealth.kz">Visit MentalHealth.kz for free counseling</a></li>
+<li><a href="https://www.who.int/mental_health">WHO Mental Health Support</a></li>
+<li>Talk to someone — even a short conversation can help lighten the burden.</li>
+</ul>
+</section>
+<section id="resources">
+    <h2>Job Search Resources</h2>
+    <div class="resource-filters">
+        <button class="filter-btn active" data-filter="all">All Resources</button>
+        <button class="filter-btn" data-filter="job">Job Portals</button>
+        <button class="filter-btn" data-filter="training">Training</button>
+        <button class="filter-btn" data-filter="support">Support</button>
+    </div>
+
+    <div class="resources">
+        <div class="resource" data-category="job">
+            <h3><i class="fas fa-globe"></i> Enbek.kz</h3>
+            <p>Official Kazakhstan job portal</p>
+            <a href="https://enbek.kz/kk" target="_blank">Visit Site <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="resource" data-category="training">
+            <h3><i class="fas fa-laptop"></i> Digital Skills Training</h3>
+            <p>Free online courses for beginners</p>
+            <a href="#" target="_blank">Start Learning <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="resource" data-category="support">
+            <h3><i class="fas fa-hands-helping"></i> Career Counseling</h3>
+            <p>Free professional guidance</p>
+            <a href="#" target="_blank">Get Help <i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+</section>
+
+<section id="local-help">
+    <h2>Local Assistance</h2>
+    <div class="local-help">
+        <h3>Find Help in Your City</h3>
+        <select id="citySelect">
+            <option value="">Select your city</option>
+            <option value="almaty">Almaty</option>
+            <option value="astana">Astana (Nur-Sultan)</option>
+            <option value="shymkent">Shymkent</option>
+            <option value="karaganda">Karaganda</option>
+        </select>
+        
+        <div id="cityResources" style="display:none;">
+            <h4>Available in <span id="cityName"></span>:</h4>
+            <ul id="cityHelpList"></ul>
+        </div>
+    </div>
+</section>
+
+<div class="help-button">
+  <button id="helpBtn">
+    <i class="fas fa-hands-helping"></i> Need Help?
+  </button>
+  <div class="help-options">
+    <a href="tel:+77712345678"><i class="fas fa-phone"></i> Call Support</a>
+    <a href="https://wa.me/77771234567"><i class="fas fa-comment"></i> Chat on WhatsApp</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Email Us</a>
+  </div>
+</div>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form id="contactForm">
+<label for="name">Name:</label>
+<input id="name" name="name" required="" type="text"/>
+<label for="email">Email:</label>
+<input id="email" name="email" required="" type="email"/>
+<label for="message">Message:</label>
+<textarea id="message" name="message" required=""></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+</main>
+<footer>
+<p>© 2023 Ageism Awareness in Kazakhstan. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+<script>
+// Accessibility Tools
+document.getElementById('textSizeToggle').addEventListener('click', function() {
+    document.body.classList.toggle('text-large');
+    this.textContent = document.body.classList.contains('text-large') 
+        ? 'Normal Text Size' 
+        : 'Larger Text';
+});
+
+document.getElementById('contrastToggle').addEventListener('click', function() {
+    document.body.classList.toggle('high-contrast');
+    this.textContent = document.body.classList.contains('high-contrast')
+        ? 'Normal Contrast'
+        : 'High Contrast';
+});
+
+// Skills Checker
+document.getElementById('checkSkills').addEventListener('click', function() {
+    const checked = document.querySelectorAll('input[name="skill"]:checked').length;
+    const total = document.querySelectorAll('input[name="skill"]').length;
+    const result = document.getElementById('skillsResult');
+    
+    let message = '';
+    if (checked === total) {
+        message = '<i class="fas fa-check-circle"></i> Great job! You have all the basic digital skills needed for job searching.';
+    } else if (checked > 0) {
+        message = `<i class="fas fa-info-circle"></i> You have ${checked} out of ${total} key skills. Consider watching our video tutorials to improve.`;
+    } else {
+        message = '<i class="fas fa-exclamation-circle"></i> We recommend starting with our basic computer skills tutorials below.';
+    }
+    
+    result.innerHTML = message;
+    result.style.display = 'block';
+});
+
+// Resource Filter
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        document.querySelectorAll('.resource').forEach(resource => {
+            if (filter === 'all' || resource.getAttribute('data-category') === filter) {
+                resource.style.display = 'block';
+            } else {
+                resource.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Local Help
+const cityResources = {
+    almaty: [
+        "Free computer classes at City Library every Wednesday",
+        "Job Fair for 50+ workers - first Monday of each month",
+        "Senior Employment Center: 123 Abay Avenue"
+    ],
+    astana: [
+        "Digital literacy workshop at Community Center",
+        "Career counseling for seniors at Nur-Sultan Employment Center"
+    ],
+    shymkent: [
+        "Monthly networking events for experienced professionals",
+        "Basic IT skills training at Central Library"
+    ],
+    karaganda: [
+        "Workshops on writing resumes for older workers",
+        "Job placement assistance at Karaganda Employment Office"
+    ]
+};
+
+document.getElementById('citySelect').addEventListener('change', function() {
+    const city = this.value;
+    const resourcesDiv = document.getElementById('cityResources');
+    const list = document.getElementById('cityHelpList');
+    
+    if (city && cityResources[city]) {
+        document.getElementById('cityName').textContent = this.options[this.selectedIndex].text;
+        list.innerHTML = cityResources[city].map(item => `<li><i class="fas fa-check"></i> ${item}</li>`).join('');
+        resourcesDiv.style.display = 'block';
+    } else {
+        resourcesDiv.style.display = 'none';
+    }
+});
+
+// Enhanced Carousel with Auto-rotation
+let current = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const interval = 5000;
+
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+}
+
+function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+}
+
+let slideInterval = setInterval(nextSlide, interval);
+
+document.querySelector('.carousel').addEventListener('mouseenter', () => {
+    clearInterval(slideInterval);
+});
+
+document.querySelector('.carousel').addEventListener('mouseleave', () => {
+    slideInterval = setInterval(nextSlide, interval);
+});
+
+document.querySelector('.next').onclick = () => {
+    clearInterval(slideInterval);
+    nextSlide();
+    slideInterval = setInterval(nextSlide, interval);
+};
+
+document.querySelector('.prev').onclick = () => {
+    clearInterval(slideInterval);
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+    slideInterval = setInterval(nextSlide, interval);
+};
+
+
+document.getElementById('helpBtn').addEventListener('click', function() {
+  document.querySelector('.help-options').style.display = 
+    document.querySelector('.help-options').style.display === 'block' ? 'none' : 'block';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Job Offer or Testimonial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #35424a;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #35424a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Submit a Job Offer or Testimonial</h1>
+    <p>If you’re an employer with an opportunity, or someone who hired or worked with an older employee, share your story here.</p>
+    <form>
+      <label for="name">Your Name or Organization:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="type">Are you submitting a job offer or a testimonial?</label>
+      <input type="text" id="type" name="type" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
